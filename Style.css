@@ -42,3 +42,12 @@ nav a.nav-link.active {
 .btn-custom:hover {
     background-color: #5390d9;
 }
+
+footer {
+    font-size: 0.95rem;
+    background-color: #7b2cbf;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
