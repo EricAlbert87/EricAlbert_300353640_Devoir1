@@ -20,7 +20,7 @@ const observerOptions = {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersection) {
+        if (entry.isIntersecting) {
             const id = entry.target.id;
             navLinks.forEach(link => {
                 link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
