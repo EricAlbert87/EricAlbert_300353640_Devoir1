@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Eric Albert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #222;
+        }
+        header, section {
+            margin-bottom: 40px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 24px;
+            border: 2px solid #ccc;
+        }
+        h1 {
+            margin: 0;
+        }
+        .case-studies {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .case-study {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            padding: 16px;
+            transition: box-shadow 0.2s;
+        }
+        .case-study:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .case-study img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .reserve {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section a: À propos de vous -->
+    <header>
+        <!-- Remplacez le src de l'image par votre propre photo si désiré -->
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Photo de Eric Albert" class="profile-pic">
+        <div>
+            <h1>Eric Albert</h1>
+            <p>Étudiant passionné par la conception d'interfaces utilisateur et le développement web.<br>
+            J'aime apprendre de nouvelles technologies et relever des défis créatifs.</p>
+        </div>
+    </header>
+
+    <!-- Section b: Comment vous travaillez -->
+    <section>
+        <h2>Ma façon de travailler</h2>
+        <p>
+            Je débute dans le domaine de la conception d'interfaces utilisateur. Actuellement, je suis le cours <strong>SEG3525 - Conception d'interfaces utilisateur</strong> à l'Université d'Ottawa, où j'apprends les bases du design et de l'expérience utilisateur.<br>
+            Pour approfondir mes connaissances, je consulte régulièrement des ressources telles que :
+        </p>
+        <ul>
+            <li><a href="https://catalogue.uottawa.ca/fr/cours/seg/" target="_blank">Ma formation à l'Université d'Ottawa</a></li>
+            <li><a href="https://www.nngroup.com/" target="_blank">Nielsen Norman Group (NN/g)</a></li>
+        </ul>
+        <p class="reserve">Au fil du semestre, j'ajouterai ici mes méthodes de conception et les concepts appris (conception centrée utilisateur, évaluation heuristique, etc.).</p>
+    </section>
+
+    <!-- Section c: Études de cas -->
+    <section>
+        <h2>Études de cas</h2>
+        <div class="case-studies">
+            <div class="case-study">
+                <a href="#design1">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Design 1 - Site de services">
+                    <h3>Design 1 : Site de services</h3>
+                </a>
+                <p class="reserve">À venir : Un site pour un service (ex. dentiste, réparateur de vélos, coiffeur).</p>
+            </div>
+            <div class="case-study">
+                <a href="#design2">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Design 2 - Petit jeu">
+                    <h3>Design 2 : Petit jeu</h3>
+                </a>
+                <p class="reserve">À venir : Un petit jeu interactif conçu pour le web.</p>
+            </div>
+            <div class="case-study">
+                <a href="#design3">
+                    <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80" alt="Design 3 - Site e-commerce">
+                    <h3>Design 3 : Site e-commerce</h3>
+                </a>
+                <p class="reserve">À venir : Un site de commerce électronique moderne.</p>
+            </div>
+            <div class="case-study">
+                <a href="#design4">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Design 4 - Site d'analyse et visualisation">
+                    <h3>Design 4 : Analyse &amp; visualisation</h3>
+                </a>
+                <p class="reserve">À venir : Un site d'analyse et de visualisation de données (BI, sport, finances, etc.).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pages de réserve pour chaque design -->
+    <section id="design1">
+        <h2>Design 1 : Site de services</h2>
+        <p class="reserve">Page de réserve. Ce design présentera un site de services (ex. dentiste, réparateur de vélos, coiffeur). Explication détaillée à venir.</p>
+    </section>
+    <section id="design2">
+        <h2>Design 2 : Petit jeu</h2>
+        <p class="reserve">Page de réserve. Ce design présentera un petit jeu interactif. Explication détaillée à venir.</p>
+    </section>
+    <section id="design3">
+        <h2>Design 3 : Site e-commerce</h2>
+        <p class="reserve">Page de réserve. Ce design présentera un site e-commerce. Explication détaillée à venir.</p>
+    </section>
+    <section id="design4">
+        <h2>Design 4 : Analyse &amp; visualisation</h2>
+        <p class="reserve">Page de réserve. Ce design présentera un site d'analyse et de visualisation de données. Explication détaillée à venir.</p>
+    </section>
+</body>
+</html></a><div class="case-study">
+    <a href="#design1">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Design 1 - Site de services">
+        <h3>Design 1 : Site de services</h3>
+    </a>
+    <p class="reserve">À venir : Un site pour un service (ex. dentiste, réparateur de vélos, coiffeur).</p>
+    <p style="font-size: 0.9em; color: #888;">Source : <a href="https://unsplash.com/photos/1515378791036-0648a3ef77b2" target="_blank">Unsplash</a></p>
+    <p style="font-size: 0.9em; color: #888;">Image locale disponible : <code>image-2.jpg</code></p>
+</div>
