@@ -37,8 +37,126 @@
       </div>
     </div>
   </nav>
-
 <style>
+/* General background and font */
+body {
+  background: linear-gradient(135deg, #ede7f6 0%, #e3f2fd 100%);
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  color: #2d1457;
+}
+
+/* Section spacing and card shadow */
+.section {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(106,27,154,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(106,27,154,0.18);
+}
+
+/* Card images */
+.case-img {
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+}
+
+/* Card titles */
+.card-title {
+  color: #6a1b9a;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+/* Card text */
+.card-text {
+  color: #512da8;
+  font-size: 1rem;
+}
+
+/* Section titles */
+h2 {
+  color: #512da8;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(90deg, #b39ddb 0%, #90caf9 100%);
+  color: #fff;
+  border-radius: 18px;
+  padding: 40px 32px 32px 32px;
+  margin: 32px auto 48px auto;
+  box-shadow: 0 4px 24px rgba(81,45,168,0.10);
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.hero .lead {
+  font-size: 1.25rem;
+  color: #ede7f6;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6a1b9a !important;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #512da8 0%, #1976d2 100%);
+  color: #fff;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -2px 12px rgba(81,45,168,0.10);
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #b39ddb;
+  text-decoration: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero {
+    padding: 24px 8px 24px 8px;
+    font-size: 1rem;
+  }
+  .card {
+    margin-bottom: 24px;
+  }
+  .section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+</style>
+<style>
+
 /* Hamburger menu styles */
 .hamburger-nav {
   position: fixed;
