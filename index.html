@@ -9,6 +9,91 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<!-- Place this just after the opening <body> tag, before your main content -->
+<nav class="hamburger-nav d-lg-none">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <ul class="menu">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#projects">Études de cas</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+/* Hamburger menu styles */
+.hamburger-nav {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 1050;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-icon span {
+  height: 4px;
+  background: #512da8;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+  display: block;
+}
+#menu-toggle {
+  display: none;
+}
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #f3f0fa;
+  border: 1px solid #b39ddb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(106,27,154,0.08);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+}
+.menu li {
+  border-bottom: 1px solid #e3f2fd;
+}
+.menu li:last-child {
+  border-bottom: none;
+}
+.menu a {
+  display: block;
+  padding: 14px 20px;
+  color: #512da8;
+  text-decoration: none;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+.menu a:hover {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+/* Hide hamburger on large screens */
+@media (min-width: 992px) {
+  .hamburger-nav {
+    display: none;
+  }
+}
+</style>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
