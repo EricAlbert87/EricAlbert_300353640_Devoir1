@@ -225,6 +225,109 @@ footer a:hover {
     display: none;
   }
 }
+
+/* Subtle animated gradient background */
+body {
+  background: linear-gradient(120deg, #ede7f6 0%, #e3f2fd 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease-in-out infinite;
+}
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Add a soft drop shadow to the hero section */
+.hero {
+  box-shadow: 0 8px 32px rgba(81,45,168,0.12);
+  border: 2px solid #b39ddb;
+  background: linear-gradient(90deg, #b39ddb 0%, #90caf9 100%);
+  margin-top: 32px;
+}
+
+/* Animate the profile image on hover */
+.hero img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  transition: transform 0.3s;
+  box-shadow: 0 6px 24px rgba(81,45,168,0.18);
+}
+
+/* Animate card hover with a color accent */
+.card:hover {
+  border: 2px solid #90caf9;
+  background: #f3f0fa;
+  transition: border 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Add a colored underline to section titles */
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #6a1b9a 0%, #90caf9 100%);
+  border-radius: 2px;
+  margin: 8px auto 0 auto;
+}
+
+/* Add a fade-in animation to sections */
+.section, .hero, .card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+.hero { animation-delay: 0.1s; }
+.section { animation-delay: 0.2s; }
+.card { animation-delay: 0.3s; }
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Make footer more modern */
+footer {
+  background: linear-gradient(90deg, #512da8 0%, #1976d2 100%);
+  color: #fff;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -2px 12px rgba(81,45,168,0.10);
+  margin-top: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #b39ddb;
+  text-decoration: none;
+}
+
+/* Responsive: stack hero content on mobile */
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 24px 8px 24px 8px;
+  }
+  .hero img {
+    margin-bottom: 16px;
+  }
+  .section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
 </style>
 
 <!-- Replace your current .hero div with this updated version -->
