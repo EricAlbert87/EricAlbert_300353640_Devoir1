@@ -74,6 +74,77 @@
 </head>
 <!-- ...existing code... -->
 <body>
+    <!-- Add this inside <body>, before your sections -->
+<nav class="hamburger-nav">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+        <li><a href="design1.html">Design 1 : Site de services</a></li>
+        <li><a href="design2.html">Design 2 : Petit jeu</a></li>
+        <li><a href="design3.html">Design 3 : Site e-commerce</a></li>
+        <li><a href="design4.html">Design 4 : Analyse &amp; visualisation</a></li>
+    </ul>
+</nav>
+
+<style>
+/* Hamburger menu styles */
+.hamburger-nav {
+    position: fixed;
+    top: 24px;
+    right: 32px;
+    z-index: 1000;
+}
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #512da8;
+    background: #e3f2fd;
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: background 0.2s;
+}
+.menu-icon:hover {
+    background: #b39ddb;
+}
+#menu-toggle {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background: #f3f0fa;
+    border: 1px solid #b39ddb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(106,27,154,0.08);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+}
+.menu li {
+    border-bottom: 1px solid #e3f2fd;
+}
+.menu li:last-child {
+    border-bottom: none;
+}
+.menu a {
+    display: block;
+    padding: 14px 20px;
+    color: #512da8;
+    text-decoration: none;
+    background: none;
+    transition: background 0.2s, color 0.2s;
+}
+.menu a:hover {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+</style>
     <!-- Section a: À propos de vous -->
     <header>
         <!-- Remplacez le src de l'image par votre propre photo si désiré -->
